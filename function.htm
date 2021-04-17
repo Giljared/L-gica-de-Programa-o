@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciando curso javascript módulo 2</title>
+</head>
+<body>
+    <script>
+       function testes(){
+
+        console.log('chamando a função testes');
+        
+       }
+
+       function testes2(nome, idade, mensagem, empresa){
+
+        console.log('o nome passado é: '+ nome);
+        console.log('a idade é: '+idade);
+        console.log('Você é uma programadora: '+ mensagem)
+        console.log('A primeira empresa que diz sim para você é: '+empresa)
+       }
+
+       testes2('Gilvanete', 51, 'Front end', 'Beta Learnning e outras de uma vez só. Como pode melhorar aina mais?');
+       
+
+
+       function trabalhoRemoto(par1){
+           if(par1 == 1){
+               return "O emprego é seu, Gilvanete";
+
+           }else{
+               return "Tem outras empresas que querem te contratar. Só escolher!"
+           }
+
+       }
+
+       var nome = trabalhoRemoto(1);
+       console.log(nome);
+
+       //testes();
+
+    </script>
+</body>
+</html>

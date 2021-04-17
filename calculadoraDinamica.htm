@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Dinâmica javascript</title>
+</head>
+<body>
+    <script>
+
+        //aplicação da calculadora dinâmica precisa de:
+
+        //um número inicial
+        //um sinal válido para as 4 operações matemática
+        //um número final
+
+        var numeroInicial = prompt('Digite um número: ');
+        var sinal = prompt('Digite um sinal de operação matemática: ');
+
+        //lopping para a variável sinal a fimd e que o usuário digite um sinal válido para uma operação matemática
+        while( sinal != '+' && sinal != '-' && sinal != '*' && sinal != '/'){
+            alert('Por favor, digite um sinal válido para uma operação matemática!');
+            sinal = prompt('Digite um sinal de operação matemática: ');
+        }
+
+        var numeroFinal = prompt('Digite um número final: ');
+
+        //parseInt = converte uma string para um número
+
+        numeroInicial = parseInt(numeroInicial);
+        numeroFinal = parseInt(numeroFinal);
+
+        //garantindo o looping como else if
+
+        var resultadoFinal = 0;
+
+        if(sinal == '+'){
+            resultadoFinal = numeroFinal + numeroFinal;
+
+        }else if (sinal == '-'){
+            resultadoFinal = numeroInicial - numeroFinal;
+            
+        }else if(sinal == '*'){
+            resultadoFinal = numeroInicial * numeroFinal;
+
+        }else if (sinal == '/'){
+            resultadoFinal = numeroInicial / numeroFinal;
+        }
+
+        alert('O resultado é: '+ resultadoFinal);
+
+        console.log('O primeiro número é: '+ numeroInicial);
+        console.log('A operação é: '+ sinal);
+        console.log('O número final é: '+ numeroFinal);
+        console.log('O Resultado da operação é: '+ resultadoFinal);
+        
+    </script>
+</body>
+</html>
